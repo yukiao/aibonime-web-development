@@ -1,6 +1,7 @@
-const burgerMenu = document.getElementsByClassName('burger-menu')[0];
+const burgerMenu = document.querySelector('.burger-menu');
+const navBar = document.getElementById('navbar');
 
-const navBar = document.querySelector('header .container ul');
+let active = false;
 burgerMenu.addEventListener('click',function(){
-    navBar.classList.toggle('hideNav');
+    navBar.classList.toggle('hidden');
 });
